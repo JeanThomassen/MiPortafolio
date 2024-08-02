@@ -6,6 +6,85 @@ body{
     color: white;
     background-color: #1E1E24;
     font-family: 'Inter', sans-serif;
+
+    margin: 0;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px; /* Aumenta el tamaño del botón */
+    height: 30px; /* Aumenta la altura del botón */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed; /* Posiciona el botón de menú de manera fija */
+    top: 20px; /* Ajusta la distancia desde la parte superior si es necesario */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    z-index: 1; /* Asegura que el botón esté sobre otros elementos */
+}
+
+.bar {
+    width: 100%; /* Asegura que las barras ocupen todo el ancho del botón */
+    height: 4px; /* Aumenta el grosor de las barras */
+    background-color: #A8996E;
+    transition: 0.3s ease;
+}
+
+.nav-menu {
+    display: none; /* Oculta el menú por defecto */
+    position: fixed; /* Asegura que el menú esté posicionado de manera fija */
+    top: 0;
+    right: 0;
+    width: 250px; /* Ancho del menú */
+    height: 100%; /* Altura del menú */
+    background-color: #1E1E24; /* Color de fondo del menú */
+    box-shadow: -4px 0 5px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
+    z-index: 0; /* Asegura que el menú esté debajo del botón */
+    padding-top: 70px; /* Asegura que el contenido esté por debajo del botón */
+    padding-left: 20px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 20px; /* Espaciado entre los elementos */
+    font-size: 18px; /* Tamaño de la fuente */
+    color: white; /* Color inicial del texto */
+    cursor: pointer;
+}
+
+.menu-list li:hover {
+    color: #A8996E; /* Cambia a dorado al pasar el ratón por encima */
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background-color: #A8996E;
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+    background-color: #A8996E;
+}
+
+.nav-menu.active {
+    display: block; /* Muestra el menú cuando está activo */
+}
+
+header ul{
+    list-style: none;
+    display: block;
+    text-align: left;   
 }
 
 .container{
