@@ -10,39 +10,40 @@ body{
     margin: 0;
 }
 
+/* MENU STYLE - MENU DESPLEGABLE */
 .menu-toggle {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 40px; /* Aumenta el tamaño del botón */
-    height: 30px; /* Aumenta la altura del botón */
+    width: 40px;
+    height: 30px; 
     background: transparent;
     border: none;
     cursor: pointer;
-    position: fixed; /* Posiciona el botón de menú de manera fija */
-    top: 20px; /* Ajusta la distancia desde la parte superior si es necesario */
-    right: 10px; /* Ajusta la distancia desde el borde derecho */
-    z-index: 1; /* Asegura que el botón esté sobre otros elementos */
+    position: fixed; 
+    top: 20px;
+    right: 10px; 
+    z-index: 1; 
 }
 
 .bar {
-    width: 100%; /* Asegura que las barras ocupen todo el ancho del botón */
-    height: 4px; /* Aumenta el grosor de las barras */
+    width: 100%; 
+    height: 4px; 
     background-color: #A8996E;
     transition: 0.3s ease;
 }
 
 .nav-menu {
-    display: none; /* Oculta el menú por defecto */
-    position: fixed; /* Asegura que el menú esté posicionado de manera fija */
+    display: none;
+    position: fixed; 
     top: 0;
     right: 0;
-    width: 250px; /* Ancho del menú */
-    height: 100%; /* Altura del menú */
-    background-color: #1E1E24; /* Color de fondo del menú */
-    box-shadow: -4px 0 5px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
-    z-index: 0; /* Asegura que el menú esté debajo del botón */
-    padding-top: 70px; /* Asegura que el contenido esté por debajo del botón */
+    width: 250px;
+    height: 100%; 
+    background-color: #1E1E24; 
+    box-shadow: -4px 0 5px rgba(0, 0, 0, 0.2); 
+    z-index: 0; 
+    padding-top: 70px; 
     padding-left: 20px;
 }
 
@@ -53,14 +54,14 @@ body{
 }
 
 .menu-list li {
-    margin-bottom: 20px; /* Espaciado entre los elementos */
-    font-size: 18px; /* Tamaño de la fuente */
-    color: white; /* Color inicial del texto */
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white; 
     cursor: pointer;
 }
 
 .menu-list li:hover {
-    color: #A8996E; /* Cambia a dorado al pasar el ratón por encima */
+    color: #A8996E;
 }
 
 .menu-toggle.active .bar:nth-child(1) {
@@ -78,7 +79,7 @@ body{
 }
 
 .nav-menu.active {
-    display: block; /* Muestra el menú cuando está activo */
+    display: block;
 }
 
 header ul{
@@ -87,11 +88,12 @@ header ul{
     text-align: left;   
 }
 
+/* CONTAINER STYLE - PRESENTACION */
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: center;     
+    height: 85vh;
 }
 
 .presentacion{
@@ -100,13 +102,13 @@ header ul{
 }
 
 .img-perfil{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 
 .tlt{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -117,48 +119,62 @@ header ul{
 }
 
 .text-subtlt-1{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: lighter;
     margin-right: 10x;
 }
 
 .line {
-    border-top: 2px solid #A8996E; 
+    border-top: 4px solid #A8996E; 
     width: 50%;
     margin-left: 5px;
 }
 
 .subtlt-2{
     display: block;
-    font-size: 8px;
+    font-size: 12px;
     font-weight:normal;
     color: #A8996E;
     text-align: right;
 }
 
+/* REDES SOCIALES STYLE - GITHUB & LINKEDIN LOGO */
 nav {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
 }
 
 nav a {
     color: #fff;
-    margin: 0 10px;
+    margin: 0 20px;
     text-decoration: none;
     font-size: 24px;
 }
 
 .github-icon{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .linkedin-icon{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
+/* ARROW STYLE - FLECHA */
+.arrow-down-button{
+    
+}
+
+.arrow-down{
+    display: flex;
+    justify-content: center;
+}
+
+/* MAIN STYLES - SECCIONES WEB */
 main {
     padding: 20px;
 }
