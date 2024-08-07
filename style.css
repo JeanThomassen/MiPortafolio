@@ -91,6 +91,7 @@ header ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .presentacion{
@@ -130,7 +131,56 @@ header ul{
 .subtlt-2{
     display: block;
     font-size: 8px;
-    font-weight: lighter;
+    font-weight:normal;
     color: #A8996E;
     text-align: right;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.github-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.linkedin-icon{
+    width: 20px;
+    height: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #A8996E;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
 }
