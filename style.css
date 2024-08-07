@@ -242,7 +242,8 @@ section {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 40px;
+    line-height: 2px;
     color: #A8996E;
 }
 
@@ -251,6 +252,25 @@ form input, form textarea, form button {
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
+}
+
+.sobre-mi{
+    padding: 5px;
+}
+
+.iconos-redes{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.icon-youtube:hover,
+.icon-tiktok:hover,
+.icon-github:hover,
+.icon-linkedin:hover{
+    cursor: pointer;
 }
 
 footer {
