@@ -48,10 +48,10 @@
     </div>
     <nav>
         <a href="https://github.com/JeanThomassen" target="_blank">
-            <img class=github-icon src="Assets/Iconos/github-icon.svg">
+            <img class=github-icon src="Assets/images/github-icon.png">
         </a>
         <a href="in/jean-lucas-thomassen-a806732a1" target="_blank">
-            <img class="linkedin-icon" src="Assets/Iconos/linkedin-icon.svg">
+            <img class="linkedin-icon" src="Assets/images/linkedin-icon.png">
         </a>
     </nav>
     <a href="#sobre-mi">
@@ -76,23 +76,58 @@
             </div>
         </section>
         <section id="tecnologias">
-            <h2>Tecnologías</h2>
-            <p>HTML, CSS, JavaScript, React, Node.js, etc.</p>
+            <div class="container-2">
+                <span class="subtlt-tecnologias">Lenguajes</span>
+                <div class="bubles">
+                    <div class="circle-html">
+                        <img src="Assets/Iconos/html-icon.svg" alt="HTML">
+                    </div>
+                    <div class="circle-css">
+                        <img src="Assets/Iconos/css.svg" alt="CSS">
+                    </div>
+                    <div class="circle-javas">
+                        <img src="Assets/Iconos/javascript.svg" alt="JavaScript">
+                    </div>
+                    <div class="circle-java">
+                        <img src="Assets/Iconos/java.svg" alt="Java">
+                    </div>
+                </div>
+                <span class="subtlt-tecnologias">Frameworks</span>
+                <div class="bubles">
+                    <div class="circle-react">
+                        <img src="Assets/Iconos/react.svg" alt="React">
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <div class="container-2">
+                <h2>Proyectos</h2>
+                <div class="proyectos">
+                    <img class="preview-proyecto" src="Assets/images/falsoproyecto.png" alt="Proyecto-1">
+                    <img class="preview-proyecto" src="Assets/images/falsoproyecto.png" alt="Proyecto-2">
+                    <img class="preview-proyecto" src="Assets/images/falsoproyecto.png" alt="Proyecto-3">
+                </div>
+            </div>
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/tu-email" method="POST">
+            <h2>Contactame</h2>
+            <form action="https://formspree.io/jeanthomassen.04@gmail.com" method="POST">
                 <input type="email" name="email" placeholder="Tu correo">
                 <textarea name="message" placeholder="Tu mensaje"></textarea>
                 <button type="submit">Enviar</button>
             </form>
+            <div class="copiar-mail">
+                <span id="texto-copiar" class="mail">jeanthomassen.04@gmail.com</span>
+                <button class="btn-copiar" onclick="copiarTexto()">
+                    <img src="Assets/Iconos/clipboard.svg">
+                </button>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Jean Thomassen. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Jean Thomassen.</p>
+        <p>Todos los derechos reservados.</p>
     </footer>
     <script src="script.js"></script>
 </body>

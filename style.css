@@ -31,6 +31,7 @@ body{
     height: 4px; 
     background-color: white;
     transition: 0.3s ease;
+    box-shadow: 0 0 10px rgb(168, 153, 110, 1);
 }
 
 .nav-menu {
@@ -254,6 +255,7 @@ form input, form textarea, form button {
     padding: 10px;
 }
 
+/* SOBRE MI STYLE - SECCION SOBRE MI */
 .sobre-mi{
     padding: 5px;
 }
@@ -273,8 +275,133 @@ form input, form textarea, form button {
     cursor: pointer;
 }
 
+/* TECNOLOGIAS STYLE - SECCION TECNOLOGIAS (LENGUAJES & FRAMEWORKS) */
+.container-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subtlt-tecnologias{
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 15px;
+}
+
+.bubles{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.circle-html{
+    box-shadow: 0 0 10px rgba(207, 127, 12, 1);
+    background-color: #2C2C35;
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.circle-css{
+    box-shadow: 0 0 10px rgba(0, 159, 189, 1);
+    background-color: #2C2C35;
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.circle-javas{
+    box-shadow: 0 0 10px rgba(227, 203, 0, 1);
+    background-color: #2C2C35;
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.circle-java{
+    box-shadow: 0 0 10px rgba(227, 138, 0, 1);
+    background-color: #2C2C35;
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.circle-react{
+    box-shadow: 0 0 10px rgba(0, 227, 195, 1);
+    background-color: #2C2C35;
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.circle-html:hover , .circle-css:hover , .circle-javas:hover , 
+.circle-java:hover , .circle-react:hover {
+    transform: translateY(-10px);
+}
+
+/* PROYECTOS STYLE - SECCION PROYECTOS */
+.proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preview-proyecto{
+    box-shadow: 0 0 15px rgb(168, 153, 110, 1);
+    border-radius: 5px;
+    margin-bottom: 35px;
+}
+
+/* CONTACTAME STYLE - SECCION CONTACTO (FORM & COPIAR MAIL) */
+.copiar-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mail{
+    font-size: 15px;
+    font-weight: bold;
+    color: #A8996E;
+}
+
+.btn-copiar {
+    padding: 2px 5px;
+    background-color: rgb(44, 44, 53, 0);
+    color: white;
+    border: 2px white;
+    cursor: pointer;
+}
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
+    padding: 5px;
+    background-color: #2C2C35;
+    line-height: 5px;
+}
+
+@media (min-width: 720px) {
+    
 }
