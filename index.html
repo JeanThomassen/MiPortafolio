@@ -15,6 +15,18 @@
 
 <body>
     <header>
+        <!-- Header para escritorio -->
+        <div class="header-desktop">
+            <nav class="nav-header">
+                <ul class="menu">
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Menu hamburguesa para mobile -->
         <div class="menu-toggle" id="menu-toggle">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -22,10 +34,10 @@
         </div>
         <nav class="nav-menu" id="nav-menu">
             <ul class="menu-list">
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#tecnologias">Tecnologías</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li class="li-menu"><a class="menu-a" href="#sobre-mi">Sobre Mí</a></li>
+                <li class="li-menu"><a class="menu-a" href="#tecnologias">Tecnologías</a></li>
+                <li class="li-menu"><a class="menu-a" href="#proyectos">Proyectos</a></li>
+                <li class="li-menu"><a class="menu-a" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -47,12 +59,14 @@
         </div>
     </div>
     <nav>
-        <a href="https://github.com/JeanThomassen" target="_blank">
-            <img class=github-icon src="Assets/images/github-icon.png">
-        </a>
-        <a href="in/jean-lucas-thomassen-a806732a1" target="_blank">
-            <img class="linkedin-icon" src="Assets/images/linkedin-icon.png">
-        </a>
+        <div class="nav-redes">
+            <a class="nav-a-redes" href="https://github.com/JeanThomassen" target="_blank">
+                <img class=github-icon src="Assets/images/github-icon.png">
+            </a>
+            <a class="nav-a-redes" href="in/jean-lucas-thomassen-a806732a1" target="_blank">
+                <img class="linkedin-icon" src="Assets/images/linkedin-icon.png">
+            </a>
+        </div>
     </nav>
     <a href="#sobre-mi">
         <div class="arrow-down">

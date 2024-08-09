@@ -9,7 +9,7 @@ body{
     margin: 0;
 }
 
-/* MENU STYLE - MENU HAMBURGUESA */
+/* MENU STYLE - MENU HAMBURGUESA - MOBILE*/
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body{
     position: fixed; 
     top: 20px;
     right: 10px; 
-    z-index: 1; 
+    z-index: 2; 
 }
 
 .bar {
@@ -42,7 +42,7 @@ body{
     height: 100%; 
     background-color: #1E1E24; 
     box-shadow: -4px 0 5px rgba(0, 0, 0, 0.2); 
-    z-index: 0; 
+    z-index: 1; 
     padding-top: 70px; 
     padding-left: 20px;
 }
@@ -89,7 +89,11 @@ header ul{
 }
 
 /* LI STYLE - LISTAS */
-li {
+.menu-a:visited{
+    color: white;
+}
+
+.li-menu {
   padding: 0;
   margin: 0;
   border: none;
@@ -97,7 +101,7 @@ li {
   cursor: pointer;
 }
 
-li {
+.li-menu {
   --primary-color: #111;
   --hovered-color: #A8996E;
   position: relative;
@@ -108,14 +112,14 @@ li {
   align-items: center;
 }
 
-li {
+.li-menu {
   margin: 0;
   position: relative;
   font-size: 20px;
   color: var(--primary-color);
 }
 
-li::after {
+.li-menu::after {
   position: absolute;
   content: "";
   width: 0;
@@ -126,12 +130,59 @@ li::after {
   transition: 0.3s ease-out;
 }
 
-li:hover::after {
+.li-menu:hover::after {
   width: 100%;
 }
 
-li:hover a::before {
+.li-menu:hover a::before {
   width: 100%;
+}
+
+/* HEADER STYLE - HEADER DESKTOP */
+.header-desktop {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilos del menú */
+.nav-header .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-header .menu li {
+    margin: 0;
+}
+
+.nav-header .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Subrayado animado */
+.nav-header .menu li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #A8996E;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-header .menu li a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 /* CONTAINER STYLE - PRESENTACION */
@@ -185,7 +236,7 @@ li:hover a::before {
 }
 
 /* REDES SOCIALES STYLE - GITHUB & LINKEDIN LOGO */
-nav {
+.nav-redes {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -193,7 +244,7 @@ nav {
     height: 25px;
 }
 
-nav a {
+.nav-a-redes {
     color: #fff;
     margin: 0 20px;
     text-decoration: none;
@@ -521,6 +572,44 @@ footer {
     line-height: 5px;
 }
 
+/* MEDIA QUERY MOBILE */
+@media (max-width: 768px) {
+    .header-desktop {
+        display: none;
+    }
+}
+
+/* MEDIA QUERY DESKTOP */
 @media (min-width: 720px) {
+    /* MENU HAMBURGUESA DESACTIVADO */
+    .menu-toggle{
+        display: none;
+    }
+
+    /* HEADER DESKTOP ACTIVADO */
+    .header-desktop {
+        display: block;
+    }
     
+    /* PRESENTACION */
+    .img-perfil{
+        width: 180px;
+        height: 180px;
+    }
+
+    .tlt{
+        font-size: 60px;
+    }
+
+    .text-subtlt-1{
+        font-size: 20px;
+    }
+
+    .line{
+        width: 70%;
+    }
+
+    .subtlt-2{
+        font-size: 24px;
+    }
 }
