@@ -390,8 +390,8 @@ form input, form textarea, form button {
 .circle-html{
     box-shadow: 0 0 10px rgba(207, 127, 12, 1);
     background-color: #2C2C35;
-    width: 60px; /* Ajusta el tamaño según sea necesario */
-    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    width: 60px; 
+    height: 60px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -402,8 +402,8 @@ form input, form textarea, form button {
 .circle-css{
     box-shadow: 0 0 10px rgba(0, 159, 189, 1);
     background-color: #2C2C35;
-    width: 60px; /* Ajusta el tamaño según sea necesario */
-    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    width: 60px; 
+    height: 60px; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -414,8 +414,8 @@ form input, form textarea, form button {
 .circle-javas{
     box-shadow: 0 0 10px rgba(227, 203, 0, 1);
     background-color: #2C2C35;
-    width: 60px; /* Ajusta el tamaño según sea necesario */
-    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    width: 60px; 
+    height: 60px; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -426,8 +426,8 @@ form input, form textarea, form button {
 .circle-java{
     box-shadow: 0 0 10px rgba(227, 138, 0, 1);
     background-color: #2C2C35;
-    width: 60px; /* Ajusta el tamaño según sea necesario */
-    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    width: 60px; 
+    height: 60px; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -438,8 +438,8 @@ form input, form textarea, form button {
 .circle-react{
     box-shadow: 0 0 10px rgba(0, 227, 195, 1);
     background-color: #2C2C35;
-    width: 60px; /* Ajusta el tamaño según sea necesario */
-    height: 60px; /* Asegúrate de que el alto y el ancho sean iguales */
+    width: 60px; 
+    height: 60px; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -450,6 +450,33 @@ form input, form textarea, form button {
 .circle-html:hover , .circle-css:hover , .circle-javas:hover , 
 .circle-java:hover , .circle-react:hover {
     transform: translateY(-10px);
+}
+
+.nombre-tecnologia {
+    position: absolute;
+    bottom: -20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2C2C35;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.circle-html, .circle-css, .circle-javas, .circle-java, .circle-react {
+    position: relative;
+}
+
+.circle-html:hover .nombre-tecnologia, 
+.circle-css:hover .nombre-tecnologia, 
+.circle-javas:hover .nombre-tecnologia, 
+.circle-java:hover .nombre-tecnologia, 
+.circle-react:hover .nombre-tecnologia {
+    opacity: 1; 
 }
 
 /* PROYECTOS STYLE - SECCION PROYECTOS */
