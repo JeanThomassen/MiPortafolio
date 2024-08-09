@@ -139,10 +139,17 @@ header ul{
 }
 
 /* HEADER STYLE - HEADER DESKTOP */
-.header-desktop {
-    padding: 20px 40px;
+header {
     display: flex;
     justify-content: flex-end;
+}
+
+.header-desktop {
+    padding: 20px 15px;
+}
+
+.nav-header{
+    margin-left: auto;
 }
 
 /* Estilos del menú */
